@@ -1,0 +1,2 @@
+# Camera calibration configuration
+calibration_file: data/calibration/camera_params.yaml
