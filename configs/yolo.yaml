@@ -1,9 +1,15 @@
-# YOLO11 detection + BoT-SORT tracking configuration
+# YOLO11-SEG + BoT-SORT tracking configuration
 detection:
-  weights: weights/yolo11.pt
-  conf_threshold: 0.25
-  iou_threshold: 0.45
+  model_type: seg
+  weights: weights/yolo11-seg.pt
+  conf_thres: 0.25
+  iou_thres: 0.45
+
 tracking:
   tracker: botsort
-  track_high_thresh: 0.5
-  track_low_thresh: 0.1
+  iou_thres: 0.30
+  max_age: 30
+  min_hits: 3
+  reconnect:
+    enabled: true
+    reconnect_frames: 15  # short-term occlusion reconnection
