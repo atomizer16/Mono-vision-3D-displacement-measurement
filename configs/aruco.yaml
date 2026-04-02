@@ -1,0 +1,4 @@
+# ArUco detection and PnP configuration
+dictionary: DICT_4X4_50
+marker_length_m: 0.08
+id_whitelist: [0, 1, 2, 3]

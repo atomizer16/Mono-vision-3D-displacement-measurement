@@ -1,0 +1,6 @@
+# Output and export configuration
+output_frequency_hz: 10
+smoothing_window: 5
+export:
+  csv: true
+  json: true

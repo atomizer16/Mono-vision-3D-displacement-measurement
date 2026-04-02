@@ -1,0 +1,9 @@
+# YOLO11 detection + BoT-SORT tracking configuration
+detection:
+  weights: weights/yolo11.pt
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+tracking:
+  tracker: botsort
+  track_high_thresh: 0.5
+  track_low_thresh: 0.1
