@@ -1,4 +1,25 @@
 # ArUco detection and PnP configuration
 dictionary: DICT_4X4_50
+
+# Default marker side length (m), used when the marker id is not listed below.
 marker_length_m: 0.08
+
+# Minimum number of valid markers needed for a new scale fit.
+min_markers: 2
+
+# Minimum marker area in pixels to be accepted as an anchor.
+min_marker_area_px: 250
+
+# Marker IDs allowed to participate in pose/depth scale estimation.
 id_whitelist: [0, 1, 2, 3]
+
+# Optional per-id physical side length in meters.
+marker_length_by_id_m:
+  0: 0.08
+  1: 0.08
+  2: 0.08
+  3: 0.08
+
+# Robust fitting parameters (used when num_anchors >= 3).
+ransac_residual_threshold_m: 0.08
+ransac_max_trials: 64
