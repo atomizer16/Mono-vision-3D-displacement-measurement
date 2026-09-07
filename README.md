@@ -2,7 +2,7 @@
 
 Source code of "3D vibration displacement measurement based on monocular computer vision".
 
-## Recommended project structure
+## Project structure
 
 ```text
 .
